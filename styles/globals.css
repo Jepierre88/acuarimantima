@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.auth-bg {
+    background-image: url("../public/MAIN-BG.jpg");
+    background-size: cover; /* Asegura que la imagen cubra todo el área visible */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* La imagen no se moverá al hacer scroll */
+    background-repeat: no-repeat; /* La imagen no se repetirá */
+}
