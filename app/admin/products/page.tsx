@@ -71,7 +71,7 @@ const ProductTable = () => {
     }, [page, filteredProducts]);
 
     // Función para abrir y cerrar el modal
-    const handleOpenModalCreate = () => setIsOpenCreate(true);
+    const handleOpenModalCreate = () => setIsOpenCreate(false);
     const handleCloseModalCreate = () => setIsOpenCreate(false);
     const handleOpenModalUpdate = (product: Product) => {
         setEditProduct(product); // Establece el producto a editar
