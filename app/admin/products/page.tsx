@@ -49,7 +49,7 @@ const ProductTable = () => {
     const { products, loading, getProducts } = UseProducts();
     const [search, setSearch] = useState("");
     const [isOpenCreate, setIsOpenCreate] = useState(false);
-    const [isOpenUpdate, setIsOpenUpdate] = useState(true);
+    const [isOpenUpdate, setIsOpenUpdate] = useState(false);
     const [editProduct, setEditProduct] = useState<any | undefined>(undefined);
 
     const [page, setPage] = useState(1);
@@ -71,7 +71,7 @@ const ProductTable = () => {
     }, [page, filteredProducts]);
 
     // Función para abrir y cerrar el modal
-    const handleOpenModalCreate = () => setIsOpenCreate(false);
+    const handleOpenModalCreate = () => setIsOpenCreate(true);
     const handleCloseModalCreate = () => setIsOpenCreate(false);
     const handleOpenModalUpdate = (product: Product) => {
         setEditProduct(product); // Establece el producto a editar
